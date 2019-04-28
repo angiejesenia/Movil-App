@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="16dp"
+        android:text="SELLECIONE LA CATEGORIA:"
+        app:layout_constraintBottom_toTopOf="@+id/RDGCATEGORIA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RDGCATEGORIA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/RDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A" />
+
+        <RadioButton
+            android:id="@+id/RDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B" />
+
+        <RadioButton
+            android:id="@+id/RDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C" />
+
+        <RadioButton
+            android:id="@+id/RDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="SELLECIONAR TIPO DE ALUIMNO:"
+        app:layout_constraintBottom_toTopOf="@+id/RDGTIPO"
+        app:layout_constraintEnd_toEndOf="@+id/RDGCATEGORIA"
+        app:layout_constraintTop_toBottomOf="@+id/RDGCATEGORIA" />
+
+    <RadioGroup
+        android:id="@+id/RDGTIPO"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/RDINTERNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton"
+            tools:text="INTERNO" />
+
+        <RadioButton
+            android:id="@+id/RDEXTERNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton"
+            tools:text="EXTERNO" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="INGRESE PROMEDIO PONDERADO:"
+        app:layout_constraintBottom_toTopOf="@+id/TXTPROMEDIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RDGTIPO" />
+
+    <EditText
+        android:id="@+id/TXTPROMEDIO"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginStart="66dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/BTNCALCULAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/BTNCALCULAR"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="CALCULAR"
+        app:layout_constraintBottom_toTopOf="@+id/TXTRESULTADO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTPROMEDIO" />
+
+    <EditText
+        android:id="@+id/TXTRESULTADO"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginStart="68dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNCALCULAR" />
+
+</android.support.constraint.ConstraintLayout>

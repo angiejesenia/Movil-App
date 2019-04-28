@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="talla">
+        <item>TALLA40</item>
+        <item>TALLA41</item>
+        <item>TALLA42</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <add key="LanguageName" value="es" />
+  <add key="tracking" value="0" />
+  <add key="UseNewUi" value="1" />
+  <add key="ShowFtu" value="1" />
+  <add key="DownloadSource" value="ws" />
+  <add key="FullScreenModeRetryPeriode" value="30" />
+  <add key="ipm.periodic_request.enabled" value="1" />
+  <add key="acp.launcher.caching.litedb" value="1" />
+  <add key="KeepConnectionOpenHandlerPollInterval" value="35" />
+  <add key="KeepConnectionOpenHandlerPollTimeout" value="3600" />
+  <add key="AfterInstallBundleId" value="" />
+  <add key="BundleId" value="av" />
+  <add key="defaultView" value="launcher" />
+  <add key="DevUpdateDataSentAtStart" value="True" />
+  <add key="ShowFeedbackDate" value="253402300799" />
+  <add key="PreviousLanguageName" value="es" />
+  <add key="AnonymousSyncStatusSent" value="True" />
+  <add key="UiType" value="HtmlMiniGui" />
+  <add key="error-reporting" value="1" />
+  <add key="ui.buttons.bottomRight.action" value="aoe://openDashboardUrl?section=dashboard" />
+  <add k
